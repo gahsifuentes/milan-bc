@@ -1,0 +1,28 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run peers",
+      "type": "process",
+      "command": "cd C:\\Users\\glss\\milan-chain HTTP_PORT=3002 P2P_PORT=5002 PEERS=ws://localhost:5001"
+    },
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": []
+    }
+  ]
+}
